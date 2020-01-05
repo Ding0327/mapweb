@@ -1,0 +1,254 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap");
+* {
+  font-family: 微軟正黑體;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+nav.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+nav.navbar .nav-link {
+  font-size: 18px;
+  font-weight: 600;
+}
+nav.navbar span.title {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 25px;
+}
+
+.section1 .container-fluid {
+  background-color: #D2FFDC;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.img_taiwan {
+  max-width: 80%;
+  min-width: 150px;
+}
+
+.taiwan {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.taiwan .title {
+  font-size: 45px;
+  font-weight: bold;
+  margin: 60px 60px 20px 60px;
+}
+.taiwan .content {
+  margin: 0px 60px;
+  font-size: 20px;
+}
+
+.row {
+  position: relative;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.container_site {
+  position: relative;
+  text-align: center;
+  padding: 20px 0px;
+  height: 100%;
+}
+
+.img_site {
+  width: 90%;
+}
+
+.btn {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
+  font-size: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #107AAE;
+  border-radius: 30px;
+  border: 2px solid #107AAE;
+  z-index: 0;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #107AAE;
+  color: #fff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.decoration {
+  z-index: 4;
+  width: 160px;
+  height: 60px;
+  background-color: #005F8D;
+  border-radius: 75px;
+  position: absolute;
+  -webkit-transform: rotate(-17deg);
+          transform: rotate(-17deg);
+}
+.decoration:nth-of-type(1) {
+  top: -30px;
+  left: -20px;
+  background-color: #68C3F0;
+  width: 200px;
+}
+.decoration:nth-of-type(2) {
+  top: 10px;
+  width: 250px;
+  left: -25px;
+}
+.decoration:nth-of-type(3) {
+  top: 2px;
+  height: 50px;
+  left: -40px;
+  background-color: #107AAE;
+}
+
+.section {
+  position: relative;
+}
+.section h3.name {
+  position: absolute;
+  padding: 10px;
+  z-index: 5;
+  font-weight: bold;
+  color: #fff;
+  font-size: 55px;
+}
+
+.decoration2 {
+  z-index: 4;
+  width: 160px;
+  height: 60px;
+  background-color: #8D000E;
+  border-radius: 75px;
+  position: absolute;
+  -webkit-transform: rotate(17deg) translate(30px, 25px);
+          transform: rotate(17deg) translate(30px, 25px);
+}
+.decoration2:nth-of-type(1) {
+  top: -30px;
+  right: -20px;
+  background-color: #F0688D;
+  width: 200px;
+}
+.decoration2:nth-of-type(2) {
+  top: 10px;
+  width: 250px;
+  right: -25px;
+}
+.decoration2:nth-of-type(3) {
+  top: 2px;
+  height: 50px;
+  right: -40px;
+  background-color: #AE1020;
+}
+
+.section3 h3.name, .section5 h3.name {
+  top: 20px;
+  right: 0;
+}
+
+section#section_info .col-sm-12 {
+  margin-bottom: 30px;
+  text-align: center;
+  transition: 0.3s;
+}
+section#section_info .col-sm-12.contan {
+  background-color: #1C4A46;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+section#section_info .col-sm-12.contan h3 {
+  color: #D2FFDC;
+  text-align: left;
+  padding-bottom: 10px;
+}
+section#section_info .col-sm-12.contan a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #f0f0f0;
+  transition: 0.5s;
+  line-height: 40px;
+}
+section#section_info .col-sm-12.contan a:hover {
+  color: #4ACCC2;
+  font-weight: 600;
+}
+section#section_info .col-sm-12.contan a:active {
+  color: #4ACCC2;
+}
+
+.row2 {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+.row2 .dec {
+  position: absolute;
+  right: 0;
+  overflow-y: visible;
+}
+.row2 .col-sm-6 {
+  padding-top: 30px;
+}
+
+.modal-body {
+  text-align-last: left;
+}
+
+.embed-responsive {
+  margin-top: 15px;
+}
+
+#return-to-top {
+  z-index: 50;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #107AAE;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  display: none;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: rgba(51, 51, 51, 0.8);
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
